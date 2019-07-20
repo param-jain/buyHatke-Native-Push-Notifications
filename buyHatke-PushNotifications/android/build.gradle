@@ -18,7 +18,10 @@ allprojects {
     repositories {
         google()
         jcenter()
-        
+        maven { url 'https://maven.google.com' }
+        maven {
+            url "/Users/param_jain/Documents/GitHub/buyHatke-Native-Push-Notifications/buyHatke-PushNotifications/node_modules/react-native/android"
+        }
     }
 }
 
