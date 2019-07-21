@@ -56,7 +56,7 @@ public class MainActivity extends Activity {
 
         @Override
         public void onReceive(Context context, Intent intent) {
-             String pack = intent.getStringExtra("package");
+            String pack = intent.getStringExtra("package");
             String title = intent.getStringExtra("title");
             String text = intent.getStringExtra("text");
             int id = intent.getIntExtra("icon",0);

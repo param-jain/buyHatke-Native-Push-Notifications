@@ -2,9 +2,6 @@ package com.bunksheet.android.buyhatketask;
 
 import android.graphics.Bitmap;
 
-/**
- * Created by mukesh on 18/5/15.
- */
 public class Model {
     String name;
     Bitmap imaBitmap;
