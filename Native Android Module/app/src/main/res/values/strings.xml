@@ -3,5 +3,7 @@
 <string name="app_name">BuyHatkeTask</string>
 <string name="hello_world">Hello world!</string>
 <string name="action_settings">Notification Settings</string>
-
+    <string name="notification_message">Monitoring Notifications</string>
+<string name="notification_title">Buy Hatke</string>
+    <string name="ticker_text">OoLala</string>
 </resources>

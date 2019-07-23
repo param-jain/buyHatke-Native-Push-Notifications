@@ -2,6 +2,8 @@ package com.bunksheet.android.buyhatketask;
 
 
 import android.app.Activity;
+import android.app.Notification;
+import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -23,6 +25,8 @@ public class MainActivity extends Activity {
     CustomListAdapter adapter;
     ArrayList<Model> modelList;
 
+    String NOTIFICATION_CHANNEL_ID = "my_channel_id_01";
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +36,10 @@ public class MainActivity extends Activity {
         list=(ListView)findViewById(R.id.list);
         list.setAdapter(adapter);
         LocalBroadcastManager.getInstance(this).registerReceiver(onNotice, new IntentFilter("Msg"));
+
+        Intent i = new Intent(this, NotificationService.class);
+        this.startService(i);
+
     }
 
     @Override
